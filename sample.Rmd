@@ -1,0 +1,26 @@
+---
+title: "Week 5: Challenged problems for midterm"
+output: html_document
+date: "2026-11-10"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Problem 1
+
+```{r}
+a <- c(1:10)
+print(a)
+```
+
+# Problem 2
+
+Xin chào, tôi là Huỳnh Thị Tấn Đức, tôi yêu $30 + 6 = 36$
+
+```{r}
+curve(dexp(x, rate=0.6), from=0, to=10, col="blue", lwd=2, main="Exponential distribution", xlab="x", ylab="Density")
+curve(dexp(x, rate=0.3), from=0, to=10, col="red", lwd=2, add=TRUE)
+legend("topright", legend=c("lambda = 0.6", "lambda = 0.3", col=c("blue", "red")))
+```
